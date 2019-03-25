@@ -1,14 +1,8 @@
 
 
-  
 
 
 
-
-  
-
-
-  
 
 
 <!doctype html>
@@ -22,9 +16,9 @@
   
   
   
-    <meta name="description" content="I'll think of you every step of the way">
+    <meta name="description" content="在/themes/next/source/js/src(没有的话可以在/themes/next/source/js下创建，因主题而异。)下新建文件 clicklove.js ，接着把该链接下的代码拷贝粘贴到 clicklove.js 文件中。代码如下：!function(e,t,a){function n(){c(“.heart{width: 10px;height: 10px;positi...">
   
-  <title>归档: 3/2019: 2019 [ lvvv ]</title>
+  <title>NexT主题美化—-点击页面出现小爱心 [ lvvv ]</title>
   
   
     <link rel="shortcut icon" href="/hollow.ico">
@@ -43,6 +37,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2019/03/21/今天有风/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        今天有风
+      </div>
+    </div>
   
 </div>
 
@@ -69,7 +72,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/archives">Archives</a>
             
@@ -115,168 +118,57 @@
     <div id="content-inner">
       
       
-  <article>
-    
+  
 
-  <div id="recent-posts">
-    <h1>归档
-    
-        <span class="posts-count">
-        共
-        4
-        
-            文章
-        
-        </span>
-    
-    </h1>
-    
-    
-        
-        
-            
-        
-        
-    
-        
-        
-        
-    
-        
-        
-        
-    
-        
-        
-        
-    
-    
-    
-        
-        
-            
-            <h3 class="archive-year-title">2019
-            
-                <span class="posts-count">
-                共
-                4
-                
-                    文章
-                
-                </span>
-            
-            </h3>
-        
-        <div class="post-title-item">
-  
-  <a href="/2019/03/16/github-hexo搭建自己的博客/">
-  
-    搭建自己的博客的苦逼经历
-  
-  </a>
-  <p class="page-title-sub">
-    <span id="post-title-date">3-16</span>
-    
-    
-    
-      <br>
+  <article id="post">
+    <h1>NexT主题美化—-点击页面出现小爱心</h1>
+    <p class="page-title-sub">
+      <span id="post-title-date">撰写于 2019-03-25</span>
+      
+        <span id="post-title-updated">修改于 2019-03-25</span>
       
       
-    
-  </p>
-  
-</div>
-    
+      
+      <span id="post-title-tags">
+      标签
+      
+      
         
         
-        <div class="post-title-item">
-  
-  <a href="/2019/03/25/NexT主题美化—-点击页面出现小爱心/">
-  
-    NexT主题美化—-点击页面出现小爱心
-  
-  </a>
-  <p class="page-title-sub">
-    <span id="post-title-date">3-25</span>
-    
-    
-    <span id="post-title-tags">
-    标签
-    
-    
+        <a href="/tags/hexo/">hexo</a>
       
+      </span>
       
-      <a href="/tags/hexo/">hexo</a>
+    </p>
     
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-        
-        
-        <div class="post-title-item">
-  
-  <a href="/2019/03/15/吕sir/">
-  
-    吕sir
-  
-  </a>
-  <p class="page-title-sub">
-    <span id="post-title-date">3-15</span>
-    
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-    
-        
-        
-        <div class="post-title-item">
-  
-  <a href="/2019/03/21/今天有风/">
-  
-    今天有风
-  
-  </a>
-  <p class="page-title-sub">
-    <span id="post-title-date">3-21</span>
-    
-    
-    <span id="post-title-tags">
-    标签
-    
-    
-      
-      
-      <a href="/tags/随笔/">随笔</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
+    <p>在/themes/next/source/js/src(没有的话可以在/themes/next/source/js下创建，因主题而异。)下新建文件 clicklove.js ，接着把该链接下的代码拷贝粘贴到 clicklove.js 文件中。<br>代码如下：<br>!function(e,t,a){function n(){c(“.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: ‘’;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}”),o(),r()}function r(){for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y–,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=”left:”+d[e].x+”px;top:”+d[e].y+”px;opacity:”+d[e].alpha+”;transform:scale(“+d[e].scale+”,”+d[e].scale+”) rotate(45deg);background:”+d[e].color+”;z-index:99999”);requestAnimationFrame(r)}function o(){var t=”function”==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e){t&amp;&amp;t(),i(e)}}function i(e){var a=t.createElement(“div”);a.className=”heart”,d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement(“style”);a.type=”text/css”;try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName(“head”)[0].appendChild(a)}function s(){return”rgb(“+<del>(255*Math.random())+”,”+</del>(255<em>Math.random())+”,”+~~(255</em>Math.random())+”)”}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);</p>
+<p>修改_layout.swig<br>在\themes\next\layout_layout.swig文件末尾添加：<br><!-- 页面点击小红心 --></p>
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
     
   </div>
+</div>
 
+  
+<nav id="pagination">
+  
 
-  </article>
+  
+
+  
+    <a href="/2019/03/21/今天有风/" class="next">下一篇 今天有风 &rarr;</a>
+  
+</nav>
+<div> <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="0" height="0" src="//music.163.com/outchain/player?type=2&id=422429425&auto=1&height=66"></iframe> </div>
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
 
       
       
