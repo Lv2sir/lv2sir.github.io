@@ -127,12 +127,12 @@
   <article id="post">
     <h1>NexT主题美化-点击鼠标出现小爱心</h1>
     <p class="page-title-sub">
-      <span id="post-title-date">撰写于 2019-03-25</span>
+      <span id="post-title-date">Created at 2019-03-25</span>
       
-        <span id="post-title-updated">修改于 2019-03-26</span>
+        <span id="post-title-updated">Updated at 2019-03-26</span>
       
       
-      <span id="post-title-categories">分类
+      <span id="post-title-categories">Category
       
       
         
@@ -144,7 +144,7 @@
       
       
       <span id="post-title-tags">
-      标签
+      Tag
       
       
         
@@ -154,15 +154,7 @@
       </span>
       
     </p>
-             <!--PC版-->
-  <div id="SOHUCS"></div>
-    <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
-    <script type="text/javascript">
-    window.changyan.api.config({
-    appid: 'cyu9HOMnB',
-    conf: 'prod_42082e949350626d2d59bc2bc7b6109c'
-    });
-    </script>
+
     
     <h1 id="创建js文件"><a href="#创建js文件" class="headerlink" title="创建js文件"></a>创建js文件</h1><p>在/themes/next/source/js/src下新建文件clicklove.js，接着把该代码拷贝粘贴到clicklove.js文件中。<br>代码如下：</p>
 <p>!function(e,t,a){function n(){c(“.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: ‘’;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}”),o(),r()}function r(){for(var e=0;e&lt;d.length;e++)d[e].alpha&lt;=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y–,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText=”left:”+d[e].x+”px;top:”+d[e].y+”px;opacity:”+d[e].alpha+”;transform:scale(“+d[e].scale+”,”+d[e].scale+”) rotate(45deg);background:”+d[e].color+”;z-index:99999”);requestAnimationFrame(r)}function o(){var t=”function”==typeof e.onclick&amp;&amp;e.onclick;e.onclick=function(e){t&amp;&amp;t(),i(e)}}function i(e){var a=t.createElement(“div”);a.className=”heart”,d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement(“style”);a.type=”text/css”;try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName(“head”)[0].appendChild(a)}function s(){return”rgb(“+<del>(255*Math.random())+”,”+</del>(255<em>Math.random())+”,”+~~(255</em>Math.random())+”)”}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);</p>
@@ -172,10 +164,10 @@
 </code></pre>
   </article>
   <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
   <div class="random-toc">
-    <h2>目录</h2>
+    <h2>Table of Content</h2>
     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#创建js文件"><span class="toc-text">创建js文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#修改-layout-swig"><span class="toc-text">修改_layout.swig</span></a></li></ol></li></ol>
   </div>
 </div>
@@ -187,7 +179,7 @@
   
 
   
-    <a href="/2019/03/21/今天有风/" class="next">下一篇 今天有风 &rarr;</a>
+    <a href="/2019/03/21/今天有风/" class="next">Next post 今天有风 &rarr;</a>
   
 </nav>
 
