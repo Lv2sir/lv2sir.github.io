@@ -129,12 +129,12 @@
   
     <h1>[2019iscc线上部分wp]</h1>
     <p class="page-title-sub">
-      <span id="post-title-date">Created at 2019-06-26</span>
+      <span id="post-title-date">撰写于 2019-06-26</span>
       
-        <span id="post-title-updated">Updated at 2019-07-17</span>
+        <span id="post-title-updated">修改于 2019-07-17</span>
       
       
-      <span id="post-title-categories">Category
+      <span id="post-title-categories">分类
       
       
         
@@ -146,7 +146,7 @@
       
       
       <span id="post-title-tags">
-      Tag
+      标签
       
       
         
@@ -159,7 +159,10 @@
     </p>
     
     <p>#Mics100<br>Welcome<br>显示一个zip文件，当时就想到linux，binwolk分离。果然里面还有个压缩文件，得到一个welcome.tx文件，打开全是繁体乱码，懵逼好久，最后司法大佬发现是8进制，把带‘口’的都替换成1，不带‘口’的替换成0，得到一串八进制数字。接着py转成二进制得到flag。<br><img src="/images/1.jpg" alt><br><br><img src="/images/2.jpg" alt><br><br><img src="/images/3.png" alt><br></p>
-<p>#Misc300<br>Aesop‘s secre<br>Gif。放到ps发现8个图层，全显示发现“ISCC”字符串，想想这不可能是flag，试试是果然不是。Winhex，gif放进去，末尾看到一串神似base64的字符串，但是base64就是解不出来，最后才发现是AES加密。输入那串字符，加上之前在PS中得到的密钥，解出。。。。又是一串神似base64，可是比较之前的发现还是AES，于是再解一次，终于得出flag。。。。<br><img src="/images/4.png" alt><br></p>
+<p>#Misc300<br>Aesop‘s secre<br>Gif。放到ps发现8个图层，全显示发现“ISCC”字符串，想想这不可能是flag，试试是果然不是。Winhex，gif放进去，末尾看到一串神似base64的字符串，但是base64就是解不出来，最后才发现是AES加密。输入那串字符，加上之前在PS中得到的密钥，解出。。。。又是一串神似base64，可是比较之前的发现还是AES，于是再解一次，终于得出flag。。。。<br><img src="/images/4.png" alt><br><br><img src="/images/5.png" alt><br></p>
+<p>#Mics100<br>倒立屋<br>一张倒立的屋子，一顿沉思，还是用stegsolve查看，图层没什么变化，Extract Preview来回设通道，最终在RGB中发现IScC字符串，提交。。。不对，，，怀疑人生。。。之后想想，标题，，，，倒立，倒过来呢，哈哈。。果然是<br><img src="/images/6.png" alt><br></p>
+<p>#碎纸机<br>下载之后一张‘平平无奇的碎纸机’图片，用binwalk分离出来十张拼图图片和一个txt，提示是用opencv，但我不了解opencv啊，于是这题暂时放弃了，到后来，在某博客上发现了解析，其实当时也发现了，只不过没有颗沉着仔细的心啊！把从binwalk分离出的图片放入winhex中向下拉会发现一串有规律的字符串，复制其16进制，粘贴到记事本，查找之后会发现<br><img src="/images/7.png" alt><br><br><img src="/images/8.png" alt><br><br><img src="/images/9.png" alt><img src="/images/10.png" alt><br>仔细拼过之后得到Flag={ISCC_is_so_interesting_!}</p>
+<p>#Misc_01<br>解压后是张jpg，老套路binwalkfenli得到50张二维码，扫了之后，发现从第一张到第四十九张都是有规律可循，但第50张就不同了，于是仔细查看，再去看了看题目“最危险的地方就是最安全的地方”，查看图片属性。。。。解出base64得出flag。<br><img src="/images/11.png" alt><br></p>
 
 <!--PC版-->
     <div id="SOHUCS"></div>
@@ -178,10 +181,10 @@
   <script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyu9HOMnB"></script>
   </article>
   <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">Show TOC</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">Hide TOC</button>
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
-    <h2>Table of Content</h2>
+    <h2>目录</h2>
     
   </div>
 </div>
@@ -192,7 +195,7 @@
   
 
   
-    <a href="/2019/03/25/NexT主题美化-点击鼠标出现小爱心/" class="next">Next post NexT主题美化-点击鼠标出现小爱心 &rarr;</a>
+    <a href="/2019/03/25/NexT主题美化-点击鼠标出现小爱心/" class="next">下一篇 NexT主题美化-点击鼠标出现小爱心 &rarr;</a>
   
   
 </nav>
